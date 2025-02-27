@@ -7,7 +7,7 @@ install_requires = [
 ]
 
 setup(
-    name='pynamodb',
+    name='spendo-pynamodb',
     version=__import__('pynamodb').__version__,
     packages=find_packages(exclude=('examples', 'tests', 'typing_tests', 'tests.integration',)),
     url='http://jlafon.io/pynamodb.html',
@@ -16,7 +16,7 @@ setup(
     },
     author='Jharrod LaFon',
     author_email='jlafon@eyesopen.com',
-    description='A Pythonic Interface to DynamoDB',
+    description='A Pythonic Interface to DynamoDB (fork with flag to return conflict record)',
     long_description=open('README.rst').read(),
     long_description_content_type='text/x-rst',
     zip_safe=False,
